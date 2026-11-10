@@ -1,0 +1,29 @@
+# Raw CMS downloads: large (citations file is ~165 MB, over GitHub's 100 MB limit).
+# Download them with the links in README.md.
+data/raw/*
+!data/raw/.gitkeep
+
+# Processed data: commit only the small tables the app needs (add !rules later)
+data/processed/*
+!data/processed/.gitkeep
+
+# Models: commit only the final small pipeline you deploy (add !rules later)
+models/*
+!models/.gitkeep
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.env
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
